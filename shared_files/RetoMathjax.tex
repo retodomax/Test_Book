@@ -1,0 +1,93 @@
+<p style="display:none;"> % Tag useful such that part is included but already hidden even before rendering of MathJax.
+\(
+\newcommand{\bm}[1]{\boldsymbol{#1}}
+% \newcommand{\bm}[1]{\boldsymbol{\mathbf{#1}}}  % Use this if you prefere upright (not italic) vectors and matrices
+
+% Operators
+\newcommand{\tr}{{}^{\intercal}}               % transpose (needs amssymb)
+\newcommand{\inv}{^{-1}}                       % inverse
+\renewcommand{\d}[1]{\operatorname{d}\!{#1}}  % dx
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}           % L2 Norm
+\DeclareMathOperator*{\argmin}{arg\, min}
+\DeclareMathOperator*{\argmax}{arg\, max}
+\DeclareMathOperator{\diag}{diag}
+
+\newcommand{\E}{\mathbf{E}}  % Depreciated: delete as soon as possible... Use \ERW{}
+
+% Matrix
+\newcommand{\bigzero}{\mbox{\normalfont\Large\bfseries 0}}  % big zero in matrix
+\newcommand{\rvline}{\hspace*{-\arraycolsep}\vline\hspace*{-\arraycolsep}} % vertical bar to separate matrix
+
+% SfS stuff
+\newcommand{\iid}{\mbox{ i.i.d. }}
+\newcommand{\Xsub}[2]{{#1}_{\mathrm{\scriptscriptstyle #2}}}
+\newcommand{\wh}[1]{{}\kern0.1em\widehat{\kern-0.1em#1}{}}
+
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Cor}{Corr}
+
+\newcommand{\ekl}{[}     % Erwartungswert Klammer links
+\newcommand{\ekr}{]}     % Erwartungswert Klammer rechts
+\newcommand{\ckl}{(}     % (Co)variance Klammer links
+\newcommand{\ckr}{)}
+\newcommand{\pkl}{(}     % Probability Klammer links
+\newcommand{\pkr}{)}
+\newcommand{\vkl}{(}     % Verteilungs Klammer links
+\newcommand{\vkr}{)}
+
+\newcommand{\ERWSymbol}{\mathbf{E}}  % vorbereitet zum Anpassen an individuelle Styles
+\newcommand{\VARSymbol}{\Var}
+\newcommand{\COVSymbol}{\Cov}
+\newcommand{\CORSymbol}{\Cor}
+\DeclareMathOperator{\PRSymbol}{P}
+\newcommand{\NormalSymbol}{\mathcal{N}}
+\DeclareMathOperator{\BinomialSymbol}{\mathcal{B}} % Binomial
+\DeclareMathOperator{\BernoulliSymbol}{\mathcal{B}ernoulli} % Bernoulli
+\DeclareMathOperator{\ExponentialSymbol}{Exp}
+\DeclareMathOperator{\PoissonSymbol}{Pois}
+
+% die eigentlichen ``Funktionen''
+\newcommand{\ERW}[1] {\ERWSymbol \left[ #1 \right]}
+\newcommand{\VAR}[1] {\VARSymbol \left( #1 \right)}
+\newcommand{\VARH}[1]{\wh\VARSymbol \left( #1 \right)}
+
+\newcommand{\COV}[1] {\COVSymbol \left(#1 \right)}
+\newcommand{\COVH}[1] {\wh\COVSymbol \left( #1 \right)}
+\newcommand{\COR}[1] {\CORSymbol    \left( #1 \right)}
+\newcommand{\CORH}[1] {\wh\CORSymbol \left( #1 \right)}
+\newcommand{\PR}[1] {\PRSymbol \! \left( #1 \right)}
+\newcommand{\Normal}[1] {\NormalSymbol   \left( #1 \right)}
+\newcommand{\Binomial}[1] {\BinomialSymbol    \left( #1 \right)}
+\newcommand{\Bernoulli}[1] {\BernoulliSymbol    \left( #1 \right)}
+\newcommand{\Exponential}[1] {\ExponentialSymbol    \left( #1 \right)}
+\newcommand{\Poisson}[1] {\PoissonSymbol   \left( #1 \right)}
+
+\newcommand{\ERWi}[2]  {\Xsub{\ERWSymbol}{#1}    \left[ #2
+    \right]}
+\newcommand{\VARi}[2]  {\Xsub{\VARSymbol}{#1}    \left( #2
+    \right)}
+\newcommand{\VARHi}[2] {\Xsub{\wh\VARSymbol}{#1} \left( #2
+    \right)}
+\newcommand{\COVi}[2]  {\Xsub{\COVSymbol}{#1}    \left( #2
+    \right)}
+\newcommand{\COVHi}[2] {\Xsub{\wh\COVSymbol}{#1} \left( #2
+    \right)}
+\newcommand{\CORi}[2]  {\Xsub{\CORSymbol}{#1}    \left( #2
+    \right)}
+\newcommand{\CORHi}[2] {\Xsub{\wh\CORSymbol}{#1} \left( #2
+    \right)}
+\newcommand{\PRi}[2]   {\Xsub{\PRSymbol}{#1}     \left( #2
+    \right)}
+\newcommand{\Normali}[2]      {\Xsub{\NormalSymbol}{#1}   \left( #2
+    \right)}
+\newcommand{\Binomiali}[2]    {\Xsub{\BinomialSymbol}{#1}    \left( #2
+    \right)}
+\newcommand{\Bernoullii}[2]   {\Xsub{\BernoulliSymbol}{#1}    \left( #2
+    \right)}
+\newcommand{\Exponentiali}[2] {\Xsub{\ExponentialSymbol}{#1}    \left( #2
+    \right)}
+\newcommand{\Poissoni}[2]     {\Xsub{\PoissonSymbol}{#1}   \left( #2
+    \right)}
+\)
+</p>

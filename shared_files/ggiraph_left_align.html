@@ -1,0 +1,11 @@
+<!-- 
+    ggiraph output left aligned
+    note that this has to be included just before the body, otherwise it is overwritten by the ggiraph css which is included **after** the `theme.scss`
+    In future it would be ideal if ggiraph 1) allows to change this with `set_girafe_defaults()` 2) automatically sets this what was set for quarto `fig-align`
+ -->
+
+<style>
+.girafe_container_std {
+    text-align: left;
+}
+</style>

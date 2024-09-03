@@ -1,0 +1,45 @@
+/*-- scss:defaults --*/
+$toc-color: #7c8c49;
+$link-color: #7c8c49;
+$code-color: #da9950;
+$font-size-root: 0.9em;
+$font-family-sans-serif: "Helvetica";
+
+/*-- scss:rules --*/
+// Output Cell Box border
+.cell-output pre {
+    border: #CCCCCC 1px solid; 
+}
+// Output Cell Box background
+// .cell-output {
+//   background-color: #F1F3F5;
+//   border-radius: 4px;
+// }
+// Make margin after title block (page header) bigger
+#title-block-header {
+    margin-block-end: 4em;
+}
+// Make margin after h2 and h3 headers bigger
+h1, .h1, h2, .h2 {
+    margin-top: 126px;
+}
+h3, .h3 {
+    margin-top: 42px;
+}
+//Make captions gray and small
+figcaption, caption {
+    color: gray;
+    font-size: 0.7rem;
+}
+// Larger margin before/after captions
+figure>figcaption.quarto-float-caption-bottom {
+    margin-bottom: 4em;
+}
+figure>figcaption.quarto-float-caption-top {
+    margin-top: 4em;
+}
+
+// ggiraph output left aligned **Does not work yet!!!!**???
+.girafe_container_std {
+    text-align: left;
+}
