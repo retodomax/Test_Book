@@ -1,9 +1,22 @@
-# Preface {.unnumbered}
-
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
 ```{r}
-1 + 1
+#| echo: false
+#| out-width: 50%
+#| fig-align: center
+#| lightbox: false
+knitr::include_graphics('figures/01_cover/cover.png')
 ```
+
+
+# Preface {.unnumbered}
+
+This book contains a non-refined and constantly growing collection of useful R knowledge (i.e. [digital gardening](https://github.com/MaggieAppleton/digital-gardeners))
+This book was built with [Quarto](https://quarto.org/).
+
+
+***
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
+***

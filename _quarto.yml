@@ -1,22 +1,53 @@
 project:
   type: book
+  pre-render: shared_files/pre_render_script.R
 
 book:
-  title: "Test Book"
-  author: "Norah Jones"
-  date: "03/09/2024"
+  title: "R Knowledge Base"
+  author: "[Reto Zihlmann](https://retodomax.github.io)"
+  date: today
+  date-format: iso
+  repo-url: https://github.com/retodomax/Test_Book
+  repo-branch: main
+  repo-actions: [edit, issue]
+  favicon: "figures/00_icon/icon2.png"
+  twitter-card: true
+  site-url: https://retodomax.github.io/Test_Book
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - 001-toc.qmd
+    - part: R Language
+      chapters: 
+        - 002-obj.qmd
+        - 003-vec.qmd
 
-bibliography: references.bib
+bibliography: "shared_files/bib.bib"
+link-citations: true # not true by default for pdf
 
 format:
   html:
-    theme: cosmo
-    shift-heading-level-by: 1
+    theme:
+      - cosmo
+      - "shared_files/reto_theme.scss"
+      - "shared_files/reto_theme_book.scss"
+    toc-depth: 3
+    link-external-newwindow: true # open links in new window
+    include-before-body:
+      - "shared_files/RetoMathjax.tex"
+      - "shared_files/ggiraph_left_align.html"
 
-
+number-depth: 3
+execute: 
+  echo: true
+  warning: false
+  error: false
+  freeze: auto
+knitr: 
+  opts_chunk: 
+    comment: ""
+    out-width: 70%
+fig-align: left
+fig-width: 6
+fig-asp: 0.618
+lightbox: auto
 

@@ -1,0 +1,41 @@
+# Table of content {-}
+
+* R Language
+    - Objects
+    - Vectors
+    - Functions
+    - Environments
+    - Settings
+    - Miscellaneous
+* R Basics
+    - Data import/export
+    - Data handling
+    - Regular expressions
+* R Programming
+    - Basics
+    - Performance
+    - Functional programming
+    - R from the shell
+* R Output
+    - Base graphics
+    - ggplot
+    - Interactive plots
+    - Text output
+* R Statistics
+    - Basics
+    - Regression
+    - ANOVA
+    - Multivariate
+    - Time series
+    - Computational statistics
+* R Workflow
+    - Reproducible Research
+    - R Studio
+    - R Markdown
+    - Bookdown
+    - Reference management
+    - Git version control
+    - Packages
+* Misc
+    - Cheat sheets
+* References
