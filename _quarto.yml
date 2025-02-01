@@ -3,7 +3,7 @@ project:
   pre-render: shared_files/pre_render_script.R
 
 book:
-  title: "R Knowledge Base"
+  title: "Test Book"
   author: "[Reto Zihlmann](https://retodomax.github.io)"
   date: today
   date-format: iso
@@ -19,7 +19,6 @@ book:
     - part: R Language
       chapters: 
         - 002-obj.qmd
-        - 003-vec.qmd
 
 bibliography: "shared_files/bib.bib"
 link-citations: true # not true by default for pdf
